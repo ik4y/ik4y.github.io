@@ -1,83 +1,76 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
 }
 
 a {
   text-decoration: none;
+  color: #f9f7fd;
+  transition-duration: 0.3s;
 }
-
-a:visited {
-  color: #af3a03;
-}
-
-a:active {
-  color: #af3a03;
-}
-
-a:link {
-  color: #af3a03;
-}
-
 
 body {
-  background: #282828;
-  font-family: 'Raleway', sans-serif;
+  background: #222222;
+  font-family: 'lato', sans-serif;
   line-height: 1.7rem;
 }
 
 #container {
-  background: #222222; 
   color: #f9f7fd;
   max-width: 720px;
-  margin: 50px auto auto auto;
-  padding: 50px;
+  margin: 0 auto;
+  padding: 105px;
 }
 
-#list {
+#resume {
   float: right;
   margin: 15px;
   text-align: left;
 }
 
-#list li, #list a {
+#resume li, #footer-list li{
   list-style: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+#resume a, #footer-list a {
   color: #427b28;
 }
 
-#firstSec {
-  clear: right;
+#resume a:hover, #footerList a:hover {
+  color: #b8bb28;
 }
 
 #imad {
-  font-weight: 600;
+  font-weight: 700;
   color: #af3a03;
 }
 
-#mainText {
-  margin-top: 30px;
+section {
+  clear: right;
   font-weight: 300;
+}
+
+#main-para{
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 18px;
   max-width: 720px;
 }
 
 #mainHeading {
-  font-weight: 200;
+  font-weight: 100;
 }
 
-#readingList {
+#stack {
   margin-top: 10px;
+  font-weight: 300;
   margin-left: 20px;
 }
 
-#readingList li {
-  list-style: circle;
-}
-
-#footerList li{
-  display: inline-block;
-  list-style: square;
-  margin: 5px;
+#stack li a:hover {
+  color: #fb4934;
 }
 
 footer {
