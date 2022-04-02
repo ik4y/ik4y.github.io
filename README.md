@@ -1,1 +1,1 @@
-# Will Update Soon
+A minimal personal single page website
