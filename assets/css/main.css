@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Exo 2';
+    src: url('../fonts/Exo2-Regular.woff2') format('woff2'),
+        url('../fonts/Exo2-Regular.woff') format('woff');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,16 +16,18 @@ a {
 }
 
 body {
-  background: #222222;
-  font-family: 'lato', sans-serif;
+  background: #282828;
+  font-family: 'Exo 2';
+  letter-spacing: 0.3px;
   line-height: 1.7rem;
 }
 
 #container {
-  color: #f9f7fd;
+  color: #ebddb2;
   max-width: 720px;
-  margin: 0 auto;
-  padding: 105px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 
 #resume {
@@ -43,34 +51,31 @@ body {
 }
 
 #imad {
-  font-weight: 700;
+  font-weight: 300;
   color: #af3a03;
 }
 
 section {
   clear: right;
-  font-weight: 300;
 }
 
 #main-para{
   margin-top: 30px;
-  font-style: italic;
   font-size: 18px;
   max-width: 720px;
 }
 
-#heading {
-  font-weight: 100;
-}
-
 #stack {
   margin-top: 10px;
-  font-weight: 300;
   margin-left: 20px;
 }
 
+#stack a {
+  color: #ebddb2;
+}
+
 #stack li a:hover {
-  color: #fb4934;
+  color: #a89984;
 }
 
 footer {
