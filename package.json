@@ -1,0 +1,15 @@
+{
+  "name": "imadkat.github.io",
+  "version": "1.0.0",
+  "description": "A minimal single page personal website uses [Exo2](https://fonts.google.com/specimen/Exo+2) font and [Gruvbox](https://github.com/morhetz/gruvbox) color scheme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
