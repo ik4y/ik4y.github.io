@@ -1,3 +1,171 @@
-@tailwind base;
-@tailwind utilities;
-@tailwind components;
+:root {
+  --dark_cyan: #0f1d2b;
+  --cyan: #0390af;
+  --light_cyan: #07cbf5;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: content-box;
+}
+
+a,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#container {
+  background-color: var(--dark_cyan);
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+}
+
+header {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.fullstack {
+  color: var(--cyan);
+}
+
+#header_nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+#header_nav ul li a:hover {
+  color: var(--light_cyan);
+}
+
+#header_nav ul li:last-child a {
+  color: #07cbf5;
+  font-weight: bolder;
+}
+
+#main_section {
+  width: 65%;
+  display: flex;
+  margin-top: 50px !important;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#greetings {
+  margin: 20px 0;
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+#main_content {
+  width: 60%;
+  display: flex;
+  font-size: 18px;
+  margin-top: 60px;
+  flex-direction: column;
+}
+
+.main_social_links {
+  margin-top: 80px;
+}
+
+.main_social_links a img {
+  width: 30px;
+  margin: 3px;
+}
+
+.my_pic img {
+  border-radius: 20px;
+}
+
+.skills {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.skills h2 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.section {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#section_wrapper {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+}
+
+.section h2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.section .card {
+  border: 1px solid var(--cyan);
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.section .card p,
+.section .card h3 {
+  margin: 30px;
+}
+
+.testimonials {
+  width: 60%;
+  height: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#review {
+  margin-top: 60px;
+}
+
+.client_image {
+  border-radius: 50px;
+  margin-bottom: 37px;
+}
+
+footer {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+footer .links ul li {
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+}
