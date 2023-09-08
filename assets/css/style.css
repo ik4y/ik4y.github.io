@@ -3,7 +3,6 @@
   --cyan: #0390af;
   --light_cyan: #07cbf5;
   --white: #ffffff;
-  --black: #000000;
 }
 
 * {
@@ -30,12 +29,11 @@ a:hover {
   color: var(--white);
 }
 
+/* Header Starts Here */
 header {
-  width: 95%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: auto;
   padding-top: 30px;
 }
 
@@ -54,10 +52,13 @@ header {
 }
 
 #header_nav ul li:last-child a {
-  color: #07cbf5;
+  color: var(--light_cyan);
   font-weight: bolder;
 }
 
+/* Header Ends Here */
+
+/* Hero Section */
 #main_section {
   width: 65%;
   display: flex;
@@ -96,6 +97,8 @@ header {
   border-radius: 20px;
 }
 
+/* Hero Section Ends Here */
+
 .skills {
   width: 40%;
   margin: 0 auto;
@@ -107,6 +110,9 @@ header {
   margin: 40px 0;
 }
 
+/* Skills End Here  */
+
+/* Subsequent Sections Start Here */
 .section {
   width: 65%;
   display: flex;
@@ -125,7 +131,7 @@ header {
   text-align: center;
 }
 
-.section .card {
+.card {
   border: 1px solid var(--cyan);
   padding: 10px;
   text-align: center;
@@ -133,14 +139,26 @@ header {
   border-radius: 30px;
 }
 
-.section .card p,
-.section .card h3 {
-  margin: 30px;
+.card p,
+.card h3 {
+  margin: 30px 30px 0px 30px;
 }
+
+.card ul {
+  margin-top: 20px;
+}
+
+.card ul li {
+  text-align: left;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Testimonials Section Starts Here */
 
 .testimonials {
   width: 60%;
-  height: 400px;
+  height: auto;
   text-align: center;
   margin: 0 auto;
   margin-top: 50px;
@@ -150,10 +168,13 @@ header {
   margin-top: 60px;
 }
 
-.client_image {
-  border-radius: 50px;
-  margin-bottom: 37px;
+.testimonials_content {
+  margin-top: 20px;
+  width: 80%;
+  margin: 20px auto;
 }
+
+/* Testimonials Section Starts Here */
 
 footer {
   width: 50%;
@@ -168,4 +189,64 @@ footer .links ul li {
   display: inline-block;
   margin: 5px;
   text-align: center;
+}
+
+@media screen and (max-width: 1570px) {
+  header {
+    justify-content: space-between;
+    padding: 30px 80px;
+  }
+  .section,
+  #main_section {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  header {
+    justify-content: space-between;
+    padding: 30px 60px;
+  }
+  .section,
+  #main_section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .skills {
+    width: 75%;
+    margin: auto;
+  }
+  #section_wrapper {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #header_nav ul li {
+    display: none;
+  }
+  header {
+    padding: 30px 40px;
+  }
+  .main_social_links {
+    margin-top: 40px;
+  }
+
+  #header_nav ul li:last-child {
+    display: inline-block;
+  }
+
+  #main_section {
+    flex-direction: column-reverse;
+  }
+
+  #main_content {
+    width: 90%;
+    font-size: 16px;
+  }
 }
