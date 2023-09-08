@@ -131,6 +131,9 @@ header {
   text-align: center;
 }
 
+.card p:last-child {
+  padding-bottom: 20px;
+}
 .card {
   border: 1px solid var(--cyan);
   padding: 10px;
@@ -151,6 +154,7 @@ header {
 .card ul li {
   text-align: left;
   width: 80%;
+  list-style: none;
   margin: 20px auto;
 }
 
@@ -183,6 +187,7 @@ footer {
   text-align: center;
   margin-top: 30px;
   flex-direction: column;
+  padding-bottom: 40px;
 }
 
 footer .links ul li {
@@ -248,5 +253,36 @@ footer .links ul li {
   #main_content {
     width: 90%;
     font-size: 16px;
+  }
+
+  #section_wrapper {
+    width: 95%;
+    margin: 10px;
+  }
+
+  .testimonials {
+    width: 80%;
+    font-size: 14;
+  }
+
+  .testimonials_content {
+    width: 100%;
+    text-align: left;
+  }
+
+  footer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #section_wrapper,
+  .card {
+    margin: 10px 0;
+    padding: 5px;
+  }
+
+  .card p {
+    text-align: left;
   }
 }
