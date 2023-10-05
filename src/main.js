@@ -18,12 +18,18 @@ const testimonials = [
 
 let i = 0;
 let j = testimonials.length;
+let duration = 7000;
 
 let displayTestimonial = () => {
+  testimonials.forEach(
+    (testimony) => (duration = testimony.review.length > 40 ? 10000 : 7000)
+  );
+
   setInterval(() => {
+    console.log(duration);
     i = (j + i + 1) % j;
     testimonial.textContent = testimonials[i].review;
     clientName.textContent = testimonials[i].name;
-  }, 7000);
+  }, duration);
 };
 window.onload = displayTestimonial;
