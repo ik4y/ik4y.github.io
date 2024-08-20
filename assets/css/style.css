@@ -114,17 +114,18 @@ header {
 
 /* Subsequent Sections Start Here */
 .section {
-  width: 65%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
-#section_wrapper {
+.section_wrapper {
   display: flex;
   margin-top: 30px;
   flex-direction: row;
 }
+
 
 .section h2 {
   margin-top: 40px;
@@ -154,7 +155,6 @@ header {
 .card ul li {
   text-align: left;
   width: 80%;
-  list-style: none;
   margin: 20px auto;
 }
 
@@ -223,7 +223,7 @@ footer .links ul li {
     width: 75%;
     margin: auto;
   }
-  #section_wrapper {
+  .section_wrapper {
     width: 90%;
     display: flex;
     margin: auto;
@@ -255,7 +255,7 @@ footer .links ul li {
     font-size: 16px;
   }
 
-  #section_wrapper {
+  .section_wrapper {
     width: 95%;
     margin: 10px;
   }
@@ -276,7 +276,7 @@ footer .links ul li {
 }
 
 @media screen and (max-width: 400px) {
-  #section_wrapper,
+  .section_wrapper,
   .card {
     margin: 10px 0;
     padding: 5px;
