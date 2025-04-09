@@ -1,288 +1,156 @@
 :root {
-  --dark_cyan: #0f1d2b;
-  --cyan: #0390af;
-  --light_cyan: #07cbf5;
-  --white: #ffffff;
+  --bg: #282828;
+  --bg-soft: #32302f;
+  --fg: #ebdbb2;
+  --red: #cc241d;
+  --green: #98971a;
+  --yellow: #d79921;
+  --blue: #458588;
+  --purple: #b16286;
+  --aqua: #689d6a;
+  --gray: #a89984;
+  --border: rgba(168, 153, 132, 0.3);
 }
+
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
-  box-sizing: content-box;
 }
 
-a,
-a:visited,
-a:active,
-a:focus,
-a:hover {
-  color: var(--cyan);
-  text-decoration: none;
-  font-weight: 500;
+a, a:active, a:hover, a:focus, a:visited {
+  color: var(--fg)
 }
 
-#container {
-  background-color: var(--dark_cyan);
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  color: var(--white);
+html {
+  scroll-behavior: smooth;
 }
 
-/* Header Starts Here */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 30px;
-}
-
-.fullstack {
-  color: var(--cyan);
-}
-
-#header_nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 5px;
-}
-
-#header_nav ul li a:hover {
-  color: var(--light_cyan);
-}
-
-#header_nav ul li:last-child a {
-  color: var(--light_cyan);
-  font-weight: bolder;
-}
-
-/* Header Ends Here */
-
-/* Hero Section */
-#main_section {
-  width: 65%;
-  display: flex;
-  margin-top: 50px !important;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-}
-
-#greetings {
-  margin: 20px 0;
-}
-
-.cyan {
-  color: var(--cyan);
-}
-
-#main_content {
-  width: 60%;
-  display: flex;
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'EB Garamond', serif;
   font-size: 18px;
-  margin-top: 60px;
-  flex-direction: column;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
-.main_social_links {
-  margin-top: 80px;
-}
-
-.main_social_links a img {
-  width: 30px;
-  margin: 3px;
-}
-
-.my_pic img {
-  border-radius: 20px;
-}
-
-/* Hero Section Ends Here */
-
-.skills {
-  width: 40%;
+.container {
+  max-width: 1100px;
   margin: 0 auto;
-  margin-top: 100px;
+  padding: 2rem 1rem;
 }
 
-.skills h2 {
+header {
   text-align: center;
-  margin: 40px 0;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
-/* Skills End Here  */
-
-/* Subsequent Sections Start Here */
-.section {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-.section_wrapper {
-  display: flex;
-  margin-top: 30px;
-  flex-direction: row;
+.subtitle {
+  font-style: italic;
+  color: var(--gray);
 }
 
-
-.section h2 {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.card p:last-child {
-  padding-bottom: 20px;
-}
 .card {
-  border: 1px solid var(--cyan);
-  padding: 10px;
-  text-align: center;
-  margin: 20px;
-  border-radius: 30px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-.card p,
-.card h3 {
-  margin: 30px 30px 0px 30px;
+h2 {
+  font-size: 1.8rem;
+  color: var(--yellow);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
 }
 
-.card ul {
-  margin-top: 20px;
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--yellow);
+  opacity: 0.5;
 }
 
-.card ul li {
-  text-align: left;
-  width: 80%;
-  margin: 20px auto;
+.section-content {
+  font-size: 1.1rem;
 }
 
-/* Testimonials Section Starts Here */
 
-.testimonials {
-  width: 60%;
-  height: auto;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 50px;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
 }
 
-#review {
-  margin-top: 60px;
+.project {
+  padding: 1.5rem;
+  background: rgba(50, 48, 47, 0.6);
+  border-radius: 4px;
+  border-left: 3px solid var(--blue);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.testimonials_content {
-  margin-top: 20px;
-  width: 80%;
-  margin: 20px auto;
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
-/* Testimonials Section Starts Here */
+.project h3 {
+  margin-bottom: 0.75rem;
+}
+
+.project-tech {
+  margin-top: 1rem;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--fg);
+  text-decoration: none;
+  padding: 0.35rem 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.contact-link:hover {
+  background-color: rgba(215, 153, 33, 0.1);
+  border-color: var(--yellow);
+}
 
 footer {
-  width: 50%;
-  display: flex;
-  margin: auto;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
   text-align: center;
-  margin-top: 30px;
-  flex-direction: column;
-  padding-bottom: 40px;
+  color: var(--gray);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
 }
 
-footer .links ul li {
-  display: inline-block;
-  margin: 5px;
-  text-align: center;
-}
-
-@media screen and (max-width: 1570px) {
-  header {
-    justify-content: space-between;
-    padding: 30px 80px;
-  }
-  .section,
-  #main_section {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 1160px) {
-  header {
-    justify-content: space-between;
-    padding: 30px 60px;
-  }
-  .section,
-  #main_section {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 1060px) {
-  .skills {
-    width: 75%;
-    margin: auto;
-  }
-  .section_wrapper {
-    width: 90%;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  #header_nav ul li {
-    display: none;
-  }
-  header {
-    padding: 30px 40px;
-  }
-  .main_social_links {
-    margin-top: 40px;
-  }
-
-  #header_nav ul li:last-child {
-    display: inline-block;
-  }
-
-  #main_section {
-    flex-direction: column-reverse;
-  }
-
-  #main_content {
-    width: 90%;
-    font-size: 16px;
-  }
-
-  .section_wrapper {
-    width: 95%;
-    margin: 10px;
-  }
-
-  .testimonials {
-    width: 80%;
-    font-size: 14;
-  }
-
-  .testimonials_content {
-    width: 100%;
-    text-align: left;
-  }
-
-  footer {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .section_wrapper,
-  .card {
-    margin: 10px 0;
-    padding: 5px;
-  }
-
-  .card p {
-    text-align: left;
-  }
-}
