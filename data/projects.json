@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Distributed Task Queue",
+    "description": "A high-performance distributed task queue built with Redis and Go, capable of processing millions of jobs per day with fault tolerance and horizontal scaling.",
+    "tags": ["Go", "Redis", "Docker", "gRPC"],
+    "github": "#",
+    "external": "#"
+  },
+  {
+    "title": "API Gateway",
+    "description": "Custom API gateway with rate limiting, authentication, request transformation, and real-time analytics dashboard.",
+    "tags": ["Rust", "PostgreSQL", "WebSocket", "Prometheus"],
+    "github": "#",
+    "external": "#"
+  },
+  {
+    "title": "Database Migration Tool",
+    "description": "Zero-downtime database migration tool supporting multiple database engines with rollback capabilities and dry-run mode.",
+    "tags": ["Python", "SQLAlchemy", "CLI", "Multi-DB"],
+    "github": "#",
+    "external": null
+  },
+  {
+    "title": "Log Aggregation Service",
+    "description": "Centralized logging solution with full-text search, real-time streaming, and customizable alerting based on log patterns.",
+    "tags": ["Node.js", "Elasticsearch", "Kafka", "React"],
+    "github": "#",
+    "external": "#"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "date": "Jan 15, 2024",
+    "readTime": "8 min read",
+    "title": "Building Scalable Microservices with Go",
+    "description": "A deep dive into designing and implementing microservices that can handle millions of requests while maintaining simplicity.",
+    "tags": ["Go", "Architecture", "Microservices"],
+    "link": "#"
+  },
+  {
+    "date": "Jan 2, 2024",
+    "readTime": "12 min read",
+    "title": "Database Optimization: Beyond the Basics",
+    "description": "Advanced PostgreSQL optimization techniques including query planning, indexing strategies, and connection pooling.",
+    "tags": ["PostgreSQL", "Performance", "Database"],
+    "link": "#"
+  },
+  {
+    "date": "Dec 18, 2023",
+    "readTime": "10 min read",
+    "title": "Event-Driven Architecture in Practice",
+    "description": "Real-world lessons from implementing event-driven systems using Kafka, including pitfalls to avoid.",
+    "tags": ["Kafka", "Events", "Architecture"],
+    "link": "#"
+  }
+]
+

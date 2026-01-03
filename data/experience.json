@@ -1,0 +1,33 @@
+[
+  {
+    "period": "2022 - Present",
+    "title": "Senior Backend Engineer",
+    "company": "Tech Corp",
+    "responsibilities": [
+      "Led the redesign of core microservices architecture, reducing latency by 40%",
+      "Implemented event-driven systems using Kafka for real-time data processing",
+      "Mentored junior developers and established coding standards across teams"
+    ]
+  },
+  {
+    "period": "2020 - 2022",
+    "title": "Backend Developer",
+    "company": "StartupXYZ",
+    "responsibilities": [
+      "Built RESTful APIs serving 10M+ requests daily with 99.9% uptime",
+      "Designed and optimized PostgreSQL schemas for complex business logic",
+      "Integrated third-party services including payment gateways and auth providers"
+    ]
+  },
+  {
+    "period": "2018 - 2020",
+    "title": "Junior Developer",
+    "company": "DevAgency",
+    "responsibilities": [
+      "Developed backend services for various client projects using Node.js",
+      "Collaborated with frontend teams to design efficient API contracts",
+      "Wrote comprehensive test suites achieving 90%+ code coverage"
+    ]
+  }
+]
+
