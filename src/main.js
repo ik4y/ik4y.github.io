@@ -1,53 +1,5 @@
-// const themeToggle = document.getElementById("theme-toggle");
-// const themeToggleMobile = document.getElementById("theme-toggle-mobile");
-// const sunIcon = document.getElementById("sun-icon");
-// const moonIcon = document.getElementById("moon-icon");
-// const sunIconMobile = document.getElementById("sun-icon-mobile");
-// const moonIconMobile = document.getElementById("moon-icon-mobile");
 const html = document.documentElement;
 
-// function updateIcons(isDark) {
-//   if (isDark) {
-//     sunIcon.style.display = "block";
-//     moonIcon.style.display = "none";
-//     sunIconMobile.style.display = "block";
-//     moonIconMobile.style.display = "none";
-//   } else {
-//     sunIcon.style.display = "none";
-//     moonIcon.style.display = "block";
-//     sunIconMobile.style.display = "none";
-//     moonIconMobile.style.display = "block";
-//   }
-// }
-
-// function toggleTheme() {
-//   const isDark = html.classList.contains("dark");
-//   if (isDark) {
-//     html.classList.remove("dark");
-//     localStorage.setItem("theme", "light");
-//     updateIcons(false);
-//   } else {
-//     html.classList.add("dark");
-//     localStorage.setItem("theme", "dark");
-//     updateIcons(true);
-//   }
-// }
-
-// // Initialize theme
-// const savedTheme = localStorage.getItem("theme");
-// const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-// if (savedTheme === "light") {
-//   html.classList.remove("dark");
-//   updateIcons(false);
-// } else if (savedTheme === "dark" || prefersDark) {
-//   html.classList.add("dark");
-//   updateIcons(true);
-// }
-
-// themeToggle.addEventListener("click", toggleTheme);
-// themeToggleMobile.addEventListener("click", toggleTheme);
-
-// Mobile Menu
 const mobileMenuBtn = document.getElementById("mobile-menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 const menuIcon = document.getElementById("menu-icon");
@@ -66,7 +18,6 @@ mobileMenuBtn.addEventListener("click", () => {
   }
 });
 
-// Close mobile menu when clicking a link
 mobileMenu.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     mobileMenu.classList.remove("open");
@@ -131,10 +82,6 @@ async function loadTestimonials() {
   }
 }
 
-// Load testimonials when the page loads
-loadTestimonials();
-
-// Load projects from JSON
 async function loadProjects() {
   try {
     const response = await fetch("./data/projects.json");
@@ -214,7 +161,6 @@ async function loadProjects() {
   }
 }
 
-// Load work experience from JSON
 async function loadExperience() {
   try {
     const response = await fetch("./data/experience.json");
@@ -260,7 +206,6 @@ async function loadExperience() {
   }
 }
 
-// Load blogs from JSON
 async function loadBlogs() {
   try {
     const response = await fetch("./data/blogs.json");
@@ -346,7 +291,7 @@ async function loadBlogs() {
   }
 }
 
-// Load all data when the page loads
+loadTestimonials();
 loadProjects();
 loadExperience();
 loadBlogs();

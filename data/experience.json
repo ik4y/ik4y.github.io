@@ -1,22 +1,27 @@
 [
   {
-    "period": "2022 - Present",
-    "title": "Senior Backend Engineer",
-    "company": "Tech Corp",
+    "period": "June 2025- Present",
+    "title": "Backend Engineer",
+    "company": "Readyhubb LLC",
     "responsibilities": [
-      "Led the redesign of core microservices architecture, reducing latency by 40%",
-      "Implemented event-driven systems using Kafka for real-time data processing",
-      "Mentored junior developers and established coding standards across teams"
+      "Refactor core modules through SOLID principles, adding error boundaries and logging, cutting bug resolution time",
+      "Implement a serverless media compression pipeline, optimizing cloud storage costs and reducing APIs, plus assets load time",
+      "Implement async communication using gRPC/RabbitMQ, ensuring scalability and latency reduction",
+      "Redesign database schema and minimize network calls, achieving a 60% reduction in DB load time",
+      "Optimize Docker image for microservice and integrated CI/CD pipeline, reducing deployment time by 20%",
+      "Leveraged Nginx as a load balancer for Docker containers, increased service availability and reliability by 80%"
     ]
   },
   {
-    "period": "2020 - 2022",
+    "period": "Aug 2024 - May 2025",
     "title": "Backend Developer",
-    "company": "StartupXYZ",
+    "company": "Tyzend Tech",
     "responsibilities": [
-      "Built RESTful APIs serving 10M+ requests daily with 99.9% uptime",
-      "Designed and optimized PostgreSQL schemas for complex business logic",
-      "Integrated third-party services including payment gateways and auth providers"
+      "Architected a streaming platform via WebSockets / WebRTC, improving real-time engagement through optimized media delivery",
+      "Leveraged LLMs and built an AI-powered resume optimizer 1 week early while maintaining performance and code quality",
+      "Optimized APIs using query tuning, indexing, caching, and media compression, reducing response times by 80%",
+      "Designed and implemented an authentication microservice, resulting in secure user authentication and authorization",
+      "Conducted technical interviews for a Backend Developer position, resulting in onboarding potential candidates"
     ]
   },
   {
@@ -30,4 +35,3 @@
     ]
   }
 ]
-
