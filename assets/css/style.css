@@ -473,7 +473,7 @@ ul {
 }
 
 .about-text p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--muted-foreground);
   margin-bottom: 0.75rem;
   line-height: 1.5;
@@ -628,13 +628,13 @@ ul {
   }
 
   .timeline-item:nth-child(odd) {
-    padding-right: 1.25rem;
-    text-align: right;
+    padding-right: 1.15rem;
+    text-align: left;
   }
 
   .timeline-item:nth-child(even) {
     margin-left: 50%;
-    padding-left: 1.25rem;
+    padding-left: 1.15rem;
   }
 }
 
@@ -706,7 +706,7 @@ ul {
 
 .timeline-card ul li {
   color: var(--muted-foreground);
-  font-size: 1.0125rem;
+  font-size: 1.1125rem;
   margin-bottom: 0.25rem;
   line-height: 1.4;
 }
@@ -798,7 +798,7 @@ ul {
 }
 
 .testimonial-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 

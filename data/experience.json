@@ -1,6 +1,6 @@
 [
   {
-    "period": "June 2025- Present",
+    "period": "June 2025 - Present",
     "title": "Backend Engineer",
     "company": "Readyhubb LLC",
     "responsibilities": [
@@ -25,13 +25,25 @@
     ]
   },
   {
-    "period": "2018 - 2020",
-    "title": "Junior Developer",
-    "company": "DevAgency",
+    "period": "Feb 2024 - Aug 2024",
+    "title": "Backend Developer",
+    "company": "AlphaSquad LLC ",
     "responsibilities": [
-      "Developed backend services for various client projects using Node.js",
-      "Collaborated with frontend teams to design efficient API contracts",
-      "Wrote comprehensive test suites achieving 90%+ code coverage"
+      "Optimized APIs using schema redesigning, query tuning, and strategic indexing, improving performance by 33%",
+      "Built scalable, low-latency RESTful APIs adhering to SOLID principles, ensuring clean and maintainable code in production",
+      "Mentored and onboarded new interns, accelerated product development time, and led team onboarding",
+      "Participated in daily standups, scrum planning, and code reviews in an Agile setup, ensuring code readability and best practices"
+    ]
+  },
+  {
+    "period": "Nov 2022 - Feb 2024",
+    "title": "Backend Developer",
+    "company": "ApnaDevs PVT (LTD)",
+    "responsibilities": [
+      "Built reusable image and payment libraries, cutting dev time by 15% across projects",
+      "Designed REST APIs for mobile apps to achieve coherence with the web APIs using TypeScript/Nodejs.",
+      "Coordinated with the frontend team in the integration of Backend APIs, reducing development time by 20%.",
+      "Participated in daily standups, scrum planning, and code reviews in an Agile setup."
     ]
   }
 ]
